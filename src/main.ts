@@ -35,7 +35,7 @@ async function run(): Promise<void> {
     const baseDir = path.join(process.cwd(), core.getInput('cwd') || '')
     const readmePath = path.join(
       baseDir,
-      core.getInput('readmePath') || 'README.md'
+      core.getInput('readmePath') || 'USAGE.md'
     )
     const readmeContent = await fs.readFile(readmePath, {
       encoding: 'utf-8'
