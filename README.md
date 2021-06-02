@@ -8,7 +8,7 @@ A GitHub action to automatically update a template repository README with a list
 
 ## How to use
 
-1. Specify somewhere in a README that you want the list, and add:
+1. Specify somewhere in USAGE.md that you want the list, and add:
 
 ```txt
 <!-- EXAMPLE_TEMPLATE_LIST_START -->
