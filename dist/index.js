@@ -110,7 +110,7 @@ function run() {
                 yield git.addConfig('user.email', authorEmail);
                 yield git.addConfig('user.name', authorName);
                 yield git.add(readmePath);
-                yield git.commit(`docs: 📝 Updating template usage list`, undefined, {
+                yield git.commit(`Updating template usage list`, undefined, {
                     '--author': `"${authorName} <${authorEmail}>"`
                 });
                 yield git.push();

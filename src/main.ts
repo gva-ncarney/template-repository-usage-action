@@ -121,7 +121,7 @@ async function run(): Promise<void> {
       await git.addConfig('user.email', authorEmail)
       await git.addConfig('user.name', authorName)
       await git.add(readmePath)
-      await git.commit(`docs: 📝 Updating template usage list`, undefined, {
+      await git.commit(`Updating template usage list`, undefined, {
         '--author': `"${authorName} <${authorEmail}>"`
       })
       await git.push()
