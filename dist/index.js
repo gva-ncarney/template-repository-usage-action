@@ -50,7 +50,7 @@ function run() {
             const authorEmail = core.getInput('author_email') || 'matt.a.elphy@gmail.com';
             const authorName = core.getInput('author_name') || 'Matthew Elphick';
             const baseDir = path_1.default.join(process.cwd(), core.getInput('cwd') || '');
-            const readmePath = path_1.default.join(baseDir, core.getInput('readmePath') || 'README.md');
+            const readmePath = path_1.default.join(baseDir, core.getInput('readmePath') || 'USAGE.md');
             const readmeContent = yield fs_1.promises.readFile(readmePath, {
                 encoding: 'utf-8'
             });
